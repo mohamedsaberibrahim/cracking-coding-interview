@@ -60,21 +60,4 @@ class StackWithMinimum extends Stack {
     }
 }
 
-function main() {
-    const stackWithMinimum = new StackWithMinimum();
-    stackWithMinimum.push(10);
-    console.log(stackWithMinimum.min()); // 10
-    stackWithMinimum.push(7);
-    stackWithMinimum.push(5);
-    stackWithMinimum.push(2);
-    console.log(stackWithMinimum.min()); // 2
-    stackWithMinimum.pop();
-    console.log(stackWithMinimum.min()); // 5
-    stackWithMinimum.pop();
-    console.log(stackWithMinimum.min()); // 7
-    stackWithMinimum.pop();
-    stackWithMinimum.pop();
-    console.log(stackWithMinimum.min()); // 1.7976931348623157e+308
-}
-
-main();
+module.exports = StackWithMinimum;

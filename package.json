@@ -1,0 +1,22 @@
+{
+  "name": "cracking-coding-interview",
+  "description": "Solving tracking-coding-interview in JS/TS with unit testing",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.6.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedsaberibrahim/cracking-coding-interview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedsaberibrahim/cracking-coding-interview/issues"
+  },
+  "homepage": "https://github.com/mohamedsaberibrahim/cracking-coding-interview#readme"
+}
