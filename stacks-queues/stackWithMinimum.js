@@ -6,17 +6,17 @@ class StackWithMinimum extends Stack {
         this.stack = new Stack();
     }
 
-    push(value) {
+    add(value) {
         if (value <= this.min()) {
-            this.stack.push(value);
+            this.stack.add(value);
         }
-        super.push(value);
+        super.add(value);
     }
 
-    pop() {
-        const value = super.pop();
+    remove() {
+        const value = super.remove();
         if(value == this.min()) {
-            this.stack.pop();
+            this.stack.remove();
         }
         return value;
     }
