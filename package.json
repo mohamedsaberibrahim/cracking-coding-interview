@@ -3,9 +3,6 @@
   "description": "Solving tracking-coding-interview in JS/TS with unit testing",
   "version": "1.0.0",
   "type": "commonjs",
-  "devDependencies": {
-    "jest": "^29.6.2"
-  },
   "scripts": {
     "test": "jest"
   },
@@ -18,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/mohamedsaberibrahim/cracking-coding-interview/issues"
   },
-  "homepage": "https://github.com/mohamedsaberibrahim/cracking-coding-interview#readme"
+  "homepage": "https://github.com/mohamedsaberibrahim/cracking-coding-interview#readme",
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2"
+  }
 }
