@@ -9,7 +9,7 @@ class Stack {
 
     remove() {
         if(this.items.length > 0) {
-        return this.items.pop();
+            return this.items.pop();
         }
     }
 
@@ -30,17 +30,4 @@ class Stack {
     }
 }
 
-function main() {
-    const stack = new Stack();
-    stack.add(1);
-    stack.add(2);
-    stack.add(3);
-    stack.add(4);
-    stack.add(5);
-    console.log(`isEmpty: ${stack.isEmpty()}`);
-    console.log(`peek: ${stack.peek()}`);
-    console.log(`remove: ${stack.remove()}`);
-    console.log(`peek: ${stack.peek()}`);
-}
-
-main();
+module.exports = Stack;
