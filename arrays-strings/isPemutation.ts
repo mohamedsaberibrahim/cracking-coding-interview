@@ -13,7 +13,7 @@
 // time complexity: O(b) 
 // space complexity: O(b) 
 
-function isPermutation(a, b) {
+export function isPermutation(a, b) {
     const longerArr = a.length > b.length ? a : b;
     const shortArr = a.length <= b.length ? a : b;
 
@@ -39,11 +39,3 @@ function isPermutation(a, b) {
 
     return true;
 }
-
-const main = () => {
-    console.log(isPermutation("ROSE", "ROC")); // false
-    console.log(isPermutation("ROSE", "ROES")); // true
-    console.log(isPermutation("ROSE", "RO")); // true
-};
-
-main();

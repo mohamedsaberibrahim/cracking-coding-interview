@@ -21,7 +21,7 @@ function toLowerCase(str) { // hard-coded function
     return occurrences;
   }
   
-  function hasPalindromePermutation(str) {
+export function hasPalindromePermutation(str) {
     const lowerCaseString = toLowerCase(str);
     const occurrenece = getCharsOccuerrences(lowerCaseString);
     let oddNumbers = 0;
@@ -32,11 +32,3 @@ function toLowerCase(str) { // hard-coded function
     }
     return oddNumbers <= 1;
   }
-  
-  const main = () => {
-      console.log(hasPalindromePermutation("Tact Coa")); // true
-      console.log(hasPalindromePermutation("Tact Cos")); // false
-  };
-  
-  main();
-  

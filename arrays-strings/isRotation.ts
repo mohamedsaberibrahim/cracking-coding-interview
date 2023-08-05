@@ -19,14 +19,7 @@ function isSubstring (s1, s2) {
     return true;
   }
   
-  function isRotation (s1, s2) {
-    const s1s1 = s1 + s1;
-    return isSubstring(s1s1, s2);
-  }
-  
-  const main = () => {
-    console.log(isRotation("waterbottle", "erbottlewat")); // true
-  };
-    
-  main();
-    
+export function isRotation (s1, s2) {
+  const s1s1 = s1 + s1;
+  return isSubstring(s1s1, s2);
+}

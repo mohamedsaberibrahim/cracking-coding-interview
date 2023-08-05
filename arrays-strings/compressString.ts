@@ -5,7 +5,7 @@
 // - saves space if not compressible
 // - gets the real length of compressed array
 
-function compressString(str) {
+export function compressString(str) {
     const frequencies = new Array(str.length);
     let currentChar = str[0];
     let currentFrequecy = 1;
@@ -23,10 +23,3 @@ function compressString(str) {
     return frequencyAsStr.length >= str.length ? str : frequencyAsStr;
   }
   
-  const main = () => {
-    console.log(compressString("aabcccaa")); // aabcccaa
-    console.log(compressString("aabcccccaaa")); // a2b1c5a3
-  };
-    
-  main();
-    

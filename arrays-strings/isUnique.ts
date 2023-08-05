@@ -8,7 +8,7 @@
 // - O(N^2) without any additional data structure
 // - O(N*logN) If it is allowed to modify the input, sort then linear search
 
-function isUnique(s) {
+export function isUnique(s) {
     if(s.length > 128) return false;
     
     const arr = new Array(128);
@@ -21,8 +21,3 @@ function isUnique(s) {
     return true;
   }
   
-  const main = () => {
-    console.log(isUnique("Hello World"));
-    console.log(isUnique("Helo Wrd"));
-  };
-  main();
