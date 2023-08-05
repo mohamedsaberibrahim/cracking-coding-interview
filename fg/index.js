@@ -34,8 +34,8 @@ const fileContent = compiledFileTemplate(vars);
 const testContent = compiledTestTemplate(vars);
 
 // Write file and test case to disk
-fs.writeFileSync(`${vars.filename}.${options.type || 'js'}`, fileContent);
-fs.writeFileSync(`${vars.filename}.test.${options.type || 'js'}`, testContent);
+fs.writeFileSync(`${vars.filename}.${options.type || 'ts'}`, fileContent);
+fs.writeFileSync(`${vars.filename}.test.${options.type || 'ts'}`, testContent);
 
-console.log(`File and test case generated: ${vars.filename}.${options.type || 'js'}`);
+console.log(`File and test case generated: ${vars.filename}.${options.type || 'ts'}`);
 

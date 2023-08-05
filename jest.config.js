@@ -2,6 +2,9 @@ module.exports = {
     testEnvironment: "node",
     roots: ["<rootDir>"],
     testMatch: [
-        '**/(*.)test.js'
+        '**/(*.)test.+(ts|js)'
     ],
+    "transform": {
+        "^.+\\.(ts|tsx)$": "ts-jest"
+    },
 };

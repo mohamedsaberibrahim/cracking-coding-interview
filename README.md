@@ -2,4 +2,4 @@
 
 ## To use the CLI file generator:
 - Run `node fg -n <filename>`
-- Files will be generated on JS at the base directory
+- Files will be generated on TS at the base directory
