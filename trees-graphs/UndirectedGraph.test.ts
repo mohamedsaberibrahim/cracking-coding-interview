@@ -1,16 +1,16 @@
 /**
- * Graph
+ * UndirectedGraph
  *
- * A graph implementation using adjacency matrix.
+ * An implementation for undirected graph using adjacency matrix.
  */
 
-import { Graph } from "./Graph";
+import { UndirectedGraph } from "./UndirectedGraph";
 
-describe('Graph test cases', () => {
-  let graph: Graph;
+describe('UndirectedGraph test cases', () => {
+  let graph: UndirectedGraph;
 
   beforeEach(() => {
-    graph = new Graph(5);
+    graph = new UndirectedGraph(5);
   });
 
   it('should insert a vertex into the graph', () => {

@@ -1,12 +1,12 @@
 /**
- * Graph
+ * UndirectedGraph
  *
- * A graph implementation using adjacency matrix.
+ * An undirected graph implementation using adjacency matrix.
  */
 
 import { Queue } from '../stacks-queues/Queue';
 
-export class Graph {
+export class UndirectedGraph {
     adjacencyMatrix: number[][];
   
     constructor(size: number) {
