@@ -47,4 +47,22 @@ describe('DirectedGraph test cases', () => {
     const traversal = graph.depthFirstTraversal(0);
     expect(traversal).toEqual([0, 1, 3, 4, 2]);
   });
+
+  it('should state that there is a route between vertex', () => {
+    graph.insertEdge(0, 1);
+    graph.insertEdge(0, 2);
+    graph.insertEdge(1, 3);
+    graph.insertEdge(3, 4);
+    const routeExists = graph.routeBetweenVertex(0, 1);
+    expect(routeExists).toEqual(true);
+  });
+
+  it('should state that there is no a route between vertex', () => {
+    graph.insertEdge(0, 1);
+    graph.insertEdge(0, 2);
+    graph.insertEdge(1, 3);
+    graph.insertEdge(3, 4);
+    const routeExists = graph.routeBetweenVertex(4, 1);
+    expect(routeExists).toEqual(false);
+  });
 });
