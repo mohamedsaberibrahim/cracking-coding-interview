@@ -4,9 +4,12 @@
  * 
  */
 
-const Queue = require('./Queue');
+import { Queue } from './Queue';
 
 class Animal {
+    name: String;
+    order: number;
+
     constructor(name) {
         this.name = name;
         this.order = 0;
@@ -25,19 +28,23 @@ class Animal {
     }
 }
 
-class Dog extends Animal {
+export class Dog extends Animal {
     constructor(name) {
         super(name);
     }
 }
 
-class Cat extends Animal {
+export class Cat extends Animal {
     constructor(name) {
         super(name);
     }    
 }
 
-class AnimalShelter {
+export class AnimalShelter {
+    catsQueue: Queue;
+    dogsQueue: Queue;
+    order: number;
+
     constructor() {
         this.catsQueue = new Queue();
         this.dogsQueue = new Queue();
@@ -82,9 +89,3 @@ class AnimalShelter {
         return this.catsQueue.dequeue();
     }
 }
-
-module.exports = {
-    Cat,
-    Dog,
-    AnimalShelter
-};

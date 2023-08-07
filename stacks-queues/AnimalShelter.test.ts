@@ -4,7 +4,7 @@
  * 
  */
 
-const { AnimalShelter, Dog, Cat } = require('./AnimalShelter');
+import { AnimalShelter, Dog, Cat } from './AnimalShelter';
 
 describe('AnimalShelter test cases', () => {
   test('Calling dequeueDog should return first dog', () => {

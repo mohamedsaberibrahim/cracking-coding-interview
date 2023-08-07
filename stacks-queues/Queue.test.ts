@@ -4,7 +4,7 @@
  * 
  */
 
-const Queue = require('./Queue');
+import { Queue } from './Queue';
 
 describe('Queue', () => {
   test('Calling size should return actual size', () => {

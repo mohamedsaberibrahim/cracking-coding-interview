@@ -4,7 +4,8 @@
  * 
  */
 
-class Queue {
+export class Queue {
+    list: any[];
     constructor() {
         this.list = [];
     }
@@ -30,5 +31,3 @@ class Queue {
         return this.list.length;
     }
 }
-
-module.exports = Queue;
