@@ -8,9 +8,10 @@
 // - O(N^2) without any additional data structure
 // - O(N*logN) If it is allowed to modify the input, sort then linear search
 
-export function isUnique(s) {
+export class UniquenessValidator {
+  run(s: string): boolean {
     if(s.length > 128) return false;
-    
+
     const arr = new Array(128);
     for (let i = 0; i < s.length; i++) {
       if (arr[s.charCodeAt(i)]) {
@@ -20,4 +21,4 @@ export function isUnique(s) {
     }
     return true;
   }
-  
+}
